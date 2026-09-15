@@ -26,7 +26,7 @@ All pages share one external stylesheet. The website uses local SVG images and n
 
 ## Project Structure
 
-FORME-simple/
+FOYOU-simple/
 ├── index.html
 ├── collection.html
 ├── about.html

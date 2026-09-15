@@ -18,7 +18,7 @@ form.addEventListener('submit', function (event) {
     return;
   }
 
-  const text = 'FORME enquiry\nName: ' + name +
+  const text = 'FORYOU enquiry\nName: ' + name +
     '\nEmail: ' + form.elements.email.value +
     '\nTopic: ' + form.elements.topic.value + '\n\n' + message;
   if (fileUrl) URL.revokeObjectURL(fileUrl);
