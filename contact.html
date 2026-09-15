@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Assignment 1 | Page: Shangerey Akerke | Team: Asankhan Shyngys and Shangerey Akerke -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | FORME</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="main-header">
+    <a class="logo" href="index.html">FORME</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="collection.html">Collection</a>
+      <a href="about.html">About us</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+  <main id="main">
+    <h1>Contact us</h1>
+    <p>Have a question about our collection or project? Prepare an enquiry below.</p>
+    <div class="contact-layout">
+      <section>
+        <img class="contact-image" src="images/knit.svg" alt="Green sweater from the collection" width="500" height="500">
+        <h2>Before you start</h2>
+        <p>This student demo prepares a text file for you to download. It does not send an email or save your details on a server.</p>
+      </section>
+      <form id="contact-form">
+        <h2>Prepare an enquiry</h2>
+        <p>All fields are required.</p>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" autocomplete="name" maxlength="100" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+        <label for="topic">Topic</label>
+        <select id="topic" name="topic" required>
+          <option value="">Choose a topic</option>
+          <option>Product question</option>
+          <option>Size advice</option>
+          <option>Project feedback</option>
+        </select>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" minlength="10" maxlength="2000" required></textarea>
+        <button class="button" type="submit" disabled>Prepare enquiry</button>
+        <p id="form-status" role="status"></p>
+        <a id="download" download="forme-enquiry.txt" hidden>Download your enquiry</a>
+        <noscript><p>Enable JavaScript to use this local enquiry form.</p></noscript>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p>FORME · Student clothing-store project · SE-2504</p>
+    <p>Asankhan Shyngys &amp; Shangerey Akerke</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
