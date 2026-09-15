@@ -1,6 +1,6 @@
-# FORME — Clothing Store
+# FORYOU — Clothing Store
 
-A four-page clothing-store website created for Assignment 1: HTML & CSS Basics.
+A clothing-store website created for using HTML and CSS Basics.
 
 ## Team
 
@@ -11,7 +11,7 @@ A four-page clothing-store website created for Assignment 1: HTML & CSS Basics.
 
 ## Pages
 
-- **Home:** Introduction to FORME and featured clothing.
+- **Home:** Introduction to FORYOU and featured clothing.
 - **Collection:** Four clothing items, prices, measurement instructions, and a size guide.
 - **About Us:** Store concept, values, and team information.
 - **Contact:** Enquiry form with name, email, topic, and message fields.
@@ -59,13 +59,8 @@ Alternatively, open the project folder in VS Code and use the Live Server extens
 - Labelled form controls and keyboard focus styles
 - Enquiry validation and text-file download
 
-## Contact Form
-
-The form validates the entered details and creates a downloadable
-`forme-enquiry.txt` file. It does not send email or store information
-on a server. JavaScript must be enabled to use this feature.
 
 ## Project Scope
 
-FORME is a student demonstration. Products and prices are fictional.
+FORYOU is a student demonstration. Products and prices are fictional.
 The website does not process orders or payments.
