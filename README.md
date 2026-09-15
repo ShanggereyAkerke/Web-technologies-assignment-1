@@ -1,30 +1,71 @@
-# FORME — Assignment 1
-Group SE-2504
+# FORME — Clothing Store
 
-- Asankhan Shyngys: Home and Collection.
-- Shangerey Akerke: About us and Contact.
+A four-page clothing-store website created for Assignment 1: HTML & CSS Basics.
 
-## Open the website
-Open this folder in VS Code. Open index.html in your browser, or use Live Server.
-No installation, build step, framework, or Python is needed for the website.
+## Team
 
-## Files
-- index.html: introduction and featured clothes.
-- collection.html: four products, ordered list, table and author block.
-- about.html: store idea, unordered list and both team members.
-- contact.html: labelled enquiry form and local download.
-- css/style.css: all styles, with one phone breakpoint.
-- js/main.js: form validation and text download; no email delivery.
-- images/: five local SVG illustrations.
+**Group:** SE-2504
 
-## Before submission
-1. Publish the website on GitHub Pages and check every page and asset online.
-2. Add the live URL and fresh screenshots of all four pages to your report.
-3. Export the completed report to PDF. Do not reuse screenshots from the old design.
-4. Each member submits the project ZIP and PDF and prepares for the defense.
+- **Asankhan Shyngys:** Home and Collection pages.
+- **Shangerey Akerke:** About Us and Contact pages.
 
-## What to explain
-HTML boilerplate, headings, links, lists, alt text, footer credits, table headers,
-labels, required fields, the four CSS selector types, spacing, grid, media queries,
-and how the JavaScript creates a local text file. Review and understand your own
-pages. The biography blocks describe page responsibilities, not verified authorship.
+## Pages
+
+- **Home:** Introduction to FORME and featured clothing.
+- **Collection:** Four clothing items, prices, measurement instructions, and a size guide.
+- **About Us:** Store concept, values, and team information.
+- **Contact:** Enquiry form with name, email, topic, and message fields.
+
+## Technologies
+
+- HTML5
+- CSS3
+- JavaScript
+
+All pages share one external stylesheet. The website uses local SVG images and no frameworks or external UI libraries.
+
+## Project Structure
+
+FORME-simple/
+├── index.html
+├── collection.html
+├── about.html
+├── contact.html
+├── css/
+│   └── style.css
+├── js/
+│   └── main.js
+├── images/
+│   ├── shirt.svg
+│   ├── knit.svg
+│   ├── trousers.svg
+│   ├── jacket.svg
+│   └── studio.svg
+└── README.md
+
+## Running Locally
+
+Download and extract the project, then open `index.html` in a browser.
+
+Alternatively, open the project folder in VS Code and use the Live Server extension.
+
+## Features
+
+- Consistent navigation across all four pages
+- Warm cream and burgundy colour palette
+- Responsive layouts for desktop and mobile
+- Product cards and a clothing size table
+- Team information and circular feature images
+- Labelled form controls and keyboard focus styles
+- Enquiry validation and text-file download
+
+## Contact Form
+
+The form validates the entered details and creates a downloadable
+`forme-enquiry.txt` file. It does not send email or store information
+on a server. JavaScript must be enabled to use this feature.
+
+## Project Scope
+
+FORME is a student demonstration. Products and prices are fictional.
+The website does not process orders or payments.
