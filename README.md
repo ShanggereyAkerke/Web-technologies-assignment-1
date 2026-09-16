@@ -20,7 +20,6 @@ A clothing-store website created for using HTML and CSS Basics.
 
 - HTML5
 - CSS3
-- JavaScript
 
 All pages share one external stylesheet. The website uses local SVG images and no frameworks or external UI libraries.
 
@@ -33,8 +32,6 @@ FOYOU-simple/
 ├── contact.html
 ├── css/
 │   └── style.css
-├── js/
-│   └── main.js
 ├── images/
 │   ├── shirt.svg
 │   ├── knit.svg
@@ -57,10 +54,11 @@ Alternatively, open the project folder in VS Code and use the Live Server extens
 - Product cards and a clothing size table
 - Team information and circular feature images
 - Labelled form controls and keyboard focus styles
-- Enquiry validation and text-file download
+- HTML-only demonstration enquiry form (submission disabled)
 
 
 ## Project Scope
 
 FORYOU is a student demonstration. Products and prices are fictional.
 The website does not process orders or payments.
+The contact form is a visual demo; it does not send, save or download enquiries.

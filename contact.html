@@ -20,15 +20,15 @@
   </header>
   <main id="main">
     <h1>Contact us</h1>
-    <p>Have a question about our collection or project? Prepare an enquiry below.</p>
+    <p>Explore our example enquiry form for questions about the collection or project.</p>
     <div class="contact-layout">
       <section>
         <img class="contact-image" src="images/contactus.jpg" alt="Green sweater from the collection" width="500" height="500">
         <h2>Before you start</h2>
-        <p>This student demo prepares a text file for you to download. It does not send an email or save your details on a server.</p>
+        <p id="form-note">This is a demonstration form. You can fill in the fields, but enquiries cannot be sent, saved or downloaded.</p>
       </section>
-      <form id="contact-form">
-        <h2>Prepare an enquiry</h2>
+      <form id="contact-form" aria-describedby="form-note">
+        <h2>Example enquiry form</h2>
         <p>All fields are required.</p>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" autocomplete="name" maxlength="100" required>
@@ -43,10 +43,7 @@
         </select>
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="5" minlength="10" maxlength="2000" required></textarea>
-        <button class="button" type="submit" disabled>Prepare enquiry</button>
-        <p id="form-status" role="status"></p>
-        <a id="download" download="forme-enquiry.txt" hidden>Download your enquiry</a>
-        <noscript><p>Enable JavaScript to use this local enquiry form.</p></noscript>
+        <button class="button" type="submit" disabled>Sending unavailable (demo)</button>
       </form>
     </div>
   </main>
@@ -54,6 +51,5 @@
     <p>FORYOU · Student clothing-store project · SE-2504</p>
     <p>Asankhan Shyngys &amp; Shangerey Akerke</p>
   </footer>
-  <script src="js/main.js"></script>
 </body>
 </html>
