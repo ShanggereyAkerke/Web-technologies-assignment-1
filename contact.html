@@ -25,11 +25,11 @@
       <section>
         <img class="contact-image" src="images/contactus.jpg" alt="Green sweater from the collection" width="500" height="500">
         <h2>Before you start</h2>
-        <p id="form-note">This is a demonstration form. You can fill in the fields, but enquiries cannot be sent, saved or downloaded.</p>
+        <p id="form-note">This is a demonstration form. The button clears the fields without sending, saving or downloading your enquiry.</p>
       </section>
       <form id="contact-form" aria-describedby="form-note">
         <h2>Example enquiry form</h2>
-        <p>All fields are required.</p>
+        <p>Fill in the fields to try the form, then clear them using the button below.</p>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" autocomplete="name" maxlength="100" required>
         <label for="email">Email</label>
@@ -43,7 +43,7 @@
         </select>
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="5" minlength="10" maxlength="2000" required></textarea>
-        <button class="button" type="submit" disabled>Sending unavailable (demo)</button>
+        <button class="button" type="reset">Clear enquiry (demo)</button>
       </form>
     </div>
   </main>

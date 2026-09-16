@@ -54,11 +54,11 @@ Alternatively, open the project folder in VS Code and use the Live Server extens
 - Product cards and a clothing size table
 - Team information and circular feature images
 - Labelled form controls and keyboard focus styles
-- HTML-only demonstration enquiry form (submission disabled)
+- HTML-only demonstration enquiry form with a working reset button
 
 
 ## Project Scope
 
 FORYOU is a student demonstration. Products and prices are fictional.
 The website does not process orders or payments.
-The contact form is a visual demo; it does not send, save or download enquiries.
+The contact form is a visual demo; its button clears the fields using HTML's built-in reset behaviour. It does not send, save or download enquiries.
