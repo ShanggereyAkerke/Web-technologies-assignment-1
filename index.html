@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Assignment 1 | Page: Asankhan Shyngys | Team: Asankhan Shyngys and Shangerey Akerke -->
+  <!-- Assignment 2 | Page: Asankhan Shyngys | Team: Asankhan Shyngys and Shangerey Akerke -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | FORYOU</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-layout">
   <a class="skip-link" href="#main">Skip to content</a>
   <header id="main-header">
     <a class="logo" href="index.html">FORYOU</a>
@@ -18,16 +18,26 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
+
+  <!-- Named sidebar area; links jump to sections on this page. -->
+  <aside class="sidebar" aria-label="On this page">
+    <h2>On this page</h2>
+    <ul>
+      <li><a href="#welcome">Welcome</a></li>
+      <li><a href="#favourites">Favourites</a></li>
+    </ul>
+    <p>Everyday clothes,<br>made for you.</p>
+  </aside>
   <main id="main">
-    <section class="intro">
+    <section class="intro" id="welcome">
       <div>
         <h1>Everyday clothes, made for you.</h1>
         <p>Welcome to FORYOU. Explore comfortable clothing in easy-to-match colours.</p>
         <a class="button" href="collection.html">View collection</a>
       </div>
-      <img src="images/studio.png" alt="Clothing rail with a cream shirt and green sweater" width="800" height="900">
+      <img src="images/studio.png" alt="Two models wearing neutral everyday outfits" width="800" height="900">
     </section>
-    <section>
+    <section id="favourites">
       <h2>A few favourites</h2>
       <div class="products">
       <article class="card">
@@ -35,14 +45,27 @@
         <h3>Everyday shirt</h3>
         <p>Soft cotton · Chalk</p>
         <p class="price">18,900 KZT</p>
-        <a href="contact.html">Ask about this item</a>
+        <form class="card-action" action="contact.html" method="get">
+          <button class="button" type="submit">Ask about this item</button>
+        </form>
       </article>
       <article class="card">
         <img src="images/knit.png" alt="Easy knit in moss" width="500" height="500">
         <h3>Easy knit</h3>
         <p>Textured knit · Moss</p>
         <p class="price">24,900 KZT</p>
-        <a href="contact.html">Ask about this item</a>
+        <form class="card-action" action="contact.html" method="get">
+          <button class="button" type="submit">Ask about this item</button>
+        </form>
+      </article>
+      <article class="card">
+        <img src="images/jacket.png" alt="Model wearing the sand-coloured jacket" width="500" height="500">
+        <h3>Weekend jacket</h3>
+        <p>Lightweight layer · Sand</p>
+        <p class="price">32,900 KZT</p>
+        <form class="card-action" action="contact.html" method="get">
+          <button class="button" type="submit">Ask about this item</button>
+        </form>
       </article>
       </div>
     </section>

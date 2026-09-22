@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Assignment 1 | Page: Asankhan Shyngys | Team: Asankhan Shyngys and Shangerey Akerke -->
+  <!-- Assignment 2 | Page: Asankhan Shyngys | Team: Asankhan Shyngys and Shangerey Akerke -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Collection | FORYOU</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-layout">
   <a class="skip-link" href="#main">Skip to content</a>
   <header id="main-header">
     <a class="logo" href="index.html">FORYOU</a>
@@ -18,10 +18,20 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
+
+  <!-- Named sidebar area; links jump to sections on this page. -->
+  <aside class="sidebar" aria-label="On this page">
+    <h2>On this page</h2>
+    <ul>
+      <li><a href="#clothing">Clothing</a></li>
+      <li><a href="#size-guide">Size guide</a></li>
+    </ul>
+    <p>Everyday clothes,<br>made for you.</p>
+  </aside>
   <main id="main">
     <h1>Our collection</h1>
     <p>Four everyday pieces. All prices are in KZT and are for this student demo.</p>
-    <section>
+    <section id="clothing">
       <h2>Clothing</h2>
       <div class="products">
       <article class="card">
@@ -29,32 +39,40 @@
         <h3>Everyday shirt</h3>
         <p>Soft cotton · Chalk</p>
         <p class="price">18,900 KZT</p>
-        <a href="contact.html">Ask about this item</a>
+        <form class="card-action" action="contact.html" method="get">
+          <button class="button" type="submit">Ask about this item</button>
+        </form>
       </article>
       <article class="card">
         <img src="images/knit.png" alt="Easy knit in moss" width="500" height="500">
         <h3>Easy knit</h3>
         <p>Textured knit · Moss</p>
         <p class="price">24,900 KZT</p>
-        <a href="contact.html">Ask about this item</a>
+        <form class="card-action" action="contact.html" method="get">
+          <button class="button" type="submit">Ask about this item</button>
+        </form>
       </article>
       <article class="card">
         <img src="images/trousers.png" alt="Straight trousers in charcoal" width="500" height="500">
         <h3>Straight trousers</h3>
         <p>Relaxed fit · Charcoal</p>
         <p class="price">22,900 KZT</p>
-        <a href="contact.html">Ask about this item</a>
+        <form class="card-action" action="contact.html" method="get">
+          <button class="button" type="submit">Ask about this item</button>
+        </form>
       </article>
       <article class="card">
         <img src="images/jacket.png" alt="Weekend jacket in sand" width="500" height="500">
         <h3>Weekend jacket</h3>
         <p>Lightweight layer · Sand</p>
         <p class="price">32,900 KZT</p>
-        <a href="contact.html">Ask about this item</a>
+        <form class="card-action" action="contact.html" method="get">
+          <button class="button" type="submit">Ask about this item</button>
+        </form>
       </article>
       </div>
     </section>
-    <section class="panel">
+    <section class="panel" id="size-guide">
       <h2>Size guide</h2>
       <p>These example body measurements are in centimetres.</p>
       <ol>

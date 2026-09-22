@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Assignment 1 | Page: Shangerey Akerke | Team: Asankhan Shyngys and Shangerey Akerke -->
+  <!-- Assignment 2 | Page: Shangerey Akerke | Team: Asankhan Shyngys and Shangerey Akerke -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About us | FORYOU</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-layout">
   <a class="skip-link" href="#main">Skip to content</a>
   <header id="main-header">
     <a class="logo" href="index.html">FORYOU</a>
@@ -18,9 +18,20 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
+
+  <!-- Named sidebar area; links jump to sections on this page. -->
+  <aside class="sidebar" aria-label="On this page">
+    <h2>On this page</h2>
+    <ul>
+      <li><a href="#our-idea">Our idea</a></li>
+      <li><a href="#team">Our team</a></li>
+      <li><a href="#gallery">Photo gallery</a></li>
+    </ul>
+    <p>Everyday clothes,<br>made for you.</p>
+  </aside>
   <main id="main">
     <h1>About FORYOU</h1>
-    <div class="intro">
+    <div class="intro" id="our-idea">
       <div>
         <h2>Our idea</h2>
         <p>FORYOU is a clothing-store concept created for our HTML and CSS assignment. We chose a small collection of simple everyday clothes.</p>
@@ -31,13 +42,13 @@
           <li>Clear product information</li>
         </ul>
       </div>
-      <img src="images/banner.jpg" alt="Illustration of a small clothing display" width="800" height="900">
+      <img src="images/banner.jpg" alt="Bright clothing-store interior" width="800" height="900">
     </div>
-    <section>
+    <section id="team">
       <h2>About the team members</h2>
       <div class="team">
         <article class="panel">
-          <img class="profile-img" src="images/shyngys.jpeg" alt="Cream shirt representing the collection" width="500" height="500">
+          <img class="profile-img" src="images/shyngys.jpeg" alt="Asankhan Shyngys" width="500" height="500">
           <h3>Asankhan Shyngys</h3>
           <p>Group SE-2504. Responsible for the Home and Collection pages, product cards and size table.</p>
         </article>
@@ -46,6 +57,49 @@
           <h3>Shangerey Akerke</h3>
           <p>Group SE-2504. Responsible for the About us and Contact pages, team information and enquiry form.</p>
         </article>
+      </div>
+    </section>
+    <section id="gallery">
+      <h2>FORYOU in pictures</h2>
+      <p>Our clothes, inspiration and the people behind the project.</p>
+      <!-- Nine images in equal Grid cells. Captions also work with keyboard focus. -->
+      <div class="gallery">
+        <figure class="gallery-item" tabindex="0">
+          <img src="images/shirt.png" alt="Model wearing a white shirt">
+          <figcaption>Everyday shirt</figcaption>
+        </figure>
+        <figure class="gallery-item" tabindex="0">
+          <img src="images/knit.png" alt="Model wearing a green knit sweater">
+          <figcaption>Easy knit</figcaption>
+        </figure>
+        <figure class="gallery-item" tabindex="0">
+          <img src="images/jacket.png" alt="Model wearing a sand-coloured jacket">
+          <figcaption>Weekend jacket</figcaption>
+        </figure>
+        <figure class="gallery-item" tabindex="0">
+          <img src="images/trousers.png" alt="Charcoal straight-leg trousers">
+          <figcaption>Straight trousers</figcaption>
+        </figure>
+        <figure class="gallery-item" tabindex="0">
+          <img src="images/studio.png" alt="Two models in neutral outfits">
+          <figcaption>Everyday outfits</figcaption>
+        </figure>
+        <figure class="gallery-item" tabindex="0">
+          <img src="images/banner.jpg" alt="Bright clothing-store interior">
+          <figcaption>Our store concept</figcaption>
+        </figure>
+        <figure class="gallery-item" tabindex="0">
+          <img src="images/contactphoto.jpg" alt="A stack of folded knitwear">
+          <figcaption>Soft textures</figcaption>
+        </figure>
+        <figure class="gallery-item" tabindex="0">
+          <img src="images/shyngys.jpeg" alt="Portrait of Asankhan Shyngys">
+          <figcaption>Asankhan Shyngys</figcaption>
+        </figure>
+        <figure class="gallery-item" tabindex="0">
+          <img src="images/akerke.jpeg" alt="Portrait of Shangerey Akerke">
+          <figcaption>Shangerey Akerke</figcaption>
+        </figure>
       </div>
     </section>
   </main>
