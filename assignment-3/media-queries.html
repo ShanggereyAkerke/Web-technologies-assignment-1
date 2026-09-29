@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A responsive typography and three-card study built entirely with custom CSS media queries.">
+  <title>Responsive layout study | FORYOU</title>
+  <!-- Tasks 1 and 2: intentionally no Bootstrap stylesheet or scripts. -->
+  <link rel="stylesheet" href="css/media-queries.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="study-header"><a class="logo" href="index.html">FORYOU.</a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="collection.html">Collection</a><a href="about.html">About us</a><a href="contact.html">Contact</a></nav></header>
+  <main id="main">
+    <p class="eyebrow">Assignment 3 / Tasks 1 &amp; 2</p>
+    <h1>A wardrobe that adapts.</h1>
+    <p class="intro">This page uses only HTML and custom CSS. Resize the window to see the type grow and the three cards change from one column, to two, to three.</p>
+    <p class="layout-status"><span class="mobile-status">Mobile: one column · 16px body text</span><span class="tablet-status">Tablet: two columns · 18px body text</span><span class="desktop-status">Desktop: three columns · 20px body text</span></p>
+    <section aria-labelledby="cards-title">
+      <h2 id="cards-title">Three everyday essentials.</h2>
+      <div class="study-cards">
+        <article class="study-card"><img src="images/shirt.png" alt="Everyday cotton shirt in chalk" width="1254" height="1254"><div class="card-copy"><h3>Everyday shirt</h3><p>A relaxed cotton layer in a simple chalk colour.</p><a href="collection.html#clothing">Explore the collection →</a></div></article>
+        <article class="study-card"><img src="images/knit.png" alt="Moss-green knit sweater" width="1254" height="1254"><div class="card-copy"><h3>Easy knit</h3><p>A soft layer with texture and an easy-to-pair moss tone.</p><a href="collection.html#clothing">Explore the collection →</a></div></article>
+        <article class="study-card"><img src="images/jacket.png" alt="Sand-coloured weekend jacket" width="1254" height="1254"><div class="card-copy"><h3>Weekend jacket</h3><p>A lightweight outer layer for a coordinated everyday outfit.</p><a href="collection.html#clothing">Explore the collection →</a></div></article>
+      </div>
+    </section>
+    <section class="explanation" aria-labelledby="breakpoints-title"><h2 id="breakpoints-title">How this page responds</h2><ul><li>Below 768px: cards stack in one column, with smaller headings and paragraphs.</li><li>768–991px: two cards share a row, with medium-size typography.</li><li>992px and above: all three cards share a row, with larger typography.</li></ul><p>The changes use CSS media queries only. Bootstrap is used on the four main pages, but is not loaded here.</p></section>
+  </main>
+  <footer><p>FORYOU · Group SE-2504</p><p>Asankhan Shyngys &amp; Shangerey Akerke</p><p>Shared responsive layout study · Home and Collection: Shyngys · About and Contact: Akerke</p></footer>
+</body>
+</html>
+

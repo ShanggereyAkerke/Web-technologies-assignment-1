@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FORYOU student clothing-store concept. Everyday essentials, a lookbook and a helpful size guide.">
+  <title>About us | FORYOU</title>
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+<!-- Assignment 3. Page owner: Shangerey Akerke. Bootstrap CSS and official JavaScript bundle. -->
+<a class="visually-hidden-focusable position-absolute bg-white text-dark p-3 skip-link" href="#main">Skip to content</a>
+<header class="border-bottom">
+  <!-- Task 5: Bootstrap navbar with the standard Collapse plugin. -->
+  <nav class="navbar navbar-expand-lg bg-light py-3" aria-label="Main navigation">
+    <div class="container px-3 px-sm-2 px-lg-4">
+      <a class="navbar-brand wordmark m-0" href="index.html">FORYOU<span class="brand-dot">.</span></a>
+      <button class="navbar-toggler border-dark px-3 py-2" type="button"
+              data-bs-toggle="collapse" data-bs-target="#main-navigation"
+              aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span><span class="ms-2 small">Menu</span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link px-3 py-2" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link px-3 py-2" href="collection.html">Collection</a></li>
+            <li class="nav-item"><a class="nav-link px-3 py-2 active fw-semibold" href="about.html" aria-current="page">About us</a></li>
+            <li class="nav-item"><a class="nav-link px-3 py-2" href="contact.html">Contact</a></li></ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main id="main" class="flex-grow-1">
+<div class="container px-3 px-sm-2 px-lg-4 py-4 py-lg-5">
+  <section class="row g-4 g-lg-5 align-items-center mb-5" aria-labelledby="story-title">
+    <div class="col-12 col-lg-6"><p class="eyebrow mb-3">The story / FORYOU</p><h1 id="story-title" class="mb-4">Simple clothes.<br><em>Shared ideas.</em></h1><p class="lead text-secondary">A small wardrobe, an easy palette, and a project built together.</p><p>FORYOU is our student clothing-store concept. We explore how clear design and useful information can make a collection easier to discover.</p><a class="btn gap-1 btn-outline-primary mt-2" href="#lookbook">See our lookbook ↓</a></div>
+    <div class="col-12 col-lg-6"><img class="img-fluid w-100 story-image" src="images/banner.jpg" alt="Sunlit interior of the FORYOU clothing-store concept" width="2048" height="2048"></div>
+  </section>
+  <section class="py-4 py-lg-5" aria-labelledby="team-title">
+    <div class="row g-4"><div class="col-12 col-lg-4"><p class="eyebrow mb-2">Meet the team</p><h2 id="team-title">Two people.<br>One project.</h2><p class="text-secondary">Group SE-2504</p></div>
+    <div class="col-12 col-md-6 col-lg-4"><article class="card border-0 bg-soft h-100"><div class="card-body p-4"><p class="eyebrow mb-3">01 / Home &amp; Collection</p><h3 class="h4">Asankhan Shyngys</h3><p class="mb-0">Home page, collection, product cards, responsive layouts and size guide.</p></div></article></div>
+    <div class="col-12 col-md-6 col-lg-4"><article class="card border-0 bg-soft h-100"><div class="card-body p-4"><p class="eyebrow mb-3">02 / About &amp; Contact</p><h3 class="h4">Shangerey Akerke</h3><p class="mb-0">Our story, team information, nine-image lookbook and responsive enquiry form.</p></div></article></div></div>
+  </section>
+  <section id="lookbook" class="py-4 py-lg-5" aria-labelledby="lookbook-title">
+    <div class="row g-4"><div class="col-12 col-lg-4"><p class="eyebrow mb-2">The visual notebook</p><h2 id="lookbook-title">FORYOU<br>in pictures.</h2><p class="text-secondary">The pieces, textures and spaces behind our collection.</p></div><div class="col-12 col-lg-8"><!-- Task 7: standard Bootstrap Carousel plugin; manual playback. -->
+<p id="lookbook-help" class="small text-secondary mb-3">Use the slide indicators or Previous and Next to explore all nine images.</p>
+<div id="lookbook-carousel" class="carousel slide" data-bs-interval="false"
+     role="region" aria-roledescription="carousel" aria-label="FORYOU lookbook" aria-describedby="lookbook-help">
+  <div class="carousel-indicators position-static mb-3" data-bs-theme="dark">
+    <button type="button" data-bs-target="#lookbook-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1 of 9"></button>
+    <button type="button" data-bs-target="#lookbook-carousel" data-bs-slide-to="1" aria-label="Slide 2 of 9"></button>
+    <button type="button" data-bs-target="#lookbook-carousel" data-bs-slide-to="2" aria-label="Slide 3 of 9"></button>
+    <button type="button" data-bs-target="#lookbook-carousel" data-bs-slide-to="3" aria-label="Slide 4 of 9"></button>
+    <button type="button" data-bs-target="#lookbook-carousel" data-bs-slide-to="4" aria-label="Slide 5 of 9"></button>
+    <button type="button" data-bs-target="#lookbook-carousel" data-bs-slide-to="5" aria-label="Slide 6 of 9"></button>
+    <button type="button" data-bs-target="#lookbook-carousel" data-bs-slide-to="6" aria-label="Slide 7 of 9"></button>
+    <button type="button" data-bs-target="#lookbook-carousel" data-bs-slide-to="7" aria-label="Slide 8 of 9"></button>
+    <button type="button" data-bs-target="#lookbook-carousel" data-bs-slide-to="8" aria-label="Slide 9 of 9"></button>
+  </div>
+  <div class="carousel-inner bg-soft" aria-live="polite">
+<figure class="carousel-item active mb-0"><img class="d-block w-100 lookbook-image" src="images/shirt.png" alt="Model wearing an ivory shirt" width="1254" height="1254" loading="lazy"><figcaption class="bg-dark text-white p-3 p-md-4"><span class="small text-white-50 me-3">01 / 09</span>Everyday shirt</figcaption></figure>
+<figure class="carousel-item mb-0"><img class="d-block w-100 lookbook-image" src="images/knit.png" alt="Model wearing a moss-green knit sweater" width="1254" height="1254" loading="lazy"><figcaption class="bg-dark text-white p-3 p-md-4"><span class="small text-white-50 me-3">02 / 09</span>Easy knit</figcaption></figure>
+<figure class="carousel-item mb-0"><img class="d-block w-100 lookbook-image" src="images/jacket.png" alt="Model wearing a sand-coloured jacket" width="1254" height="1254" loading="lazy"><figcaption class="bg-dark text-white p-3 p-md-4"><span class="small text-white-50 me-3">03 / 09</span>Weekend jacket</figcaption></figure>
+<figure class="carousel-item mb-0"><img class="d-block w-100 lookbook-image" src="images/trousers.png" alt="Charcoal straight-leg trousers" width="1254" height="1254" loading="lazy"><figcaption class="bg-dark text-white p-3 p-md-4"><span class="small text-white-50 me-3">04 / 09</span>Straight trousers</figcaption></figure>
+<figure class="carousel-item mb-0"><img class="d-block w-100 lookbook-image" src="images/studio.png" alt="Two models in coordinated neutral outfits" width="1254" height="1254" loading="lazy"><figcaption class="bg-dark text-white p-3 p-md-4"><span class="small text-white-50 me-3">05 / 09</span>Everyday outfits</figcaption></figure>
+<figure class="carousel-item mb-0"><img class="d-block w-100 lookbook-image" src="images/banner.jpg" alt="Bright clothing-store interior" width="1254" height="1254" loading="lazy"><figcaption class="bg-dark text-white p-3 p-md-4"><span class="small text-white-50 me-3">06 / 09</span>Our store concept</figcaption></figure>
+<figure class="carousel-item mb-0"><img class="d-block w-100 lookbook-image" src="images/contactus.jpg" alt="Clothing displays in the FORYOU store concept" width="1254" height="1254" loading="lazy"><figcaption class="bg-dark text-white p-3 p-md-4"><span class="small text-white-50 me-3">07 / 09</span>Inside FORYOU</figcaption></figure>
+<figure class="carousel-item mb-0"><img class="d-block w-100 lookbook-image" src="images/gallery-cotton.png" alt="Ivory cotton shirt draped over a wooden chair" width="1254" height="1254" loading="lazy"><figcaption class="bg-dark text-white p-3 p-md-4"><span class="small text-white-50 me-3">08 / 09</span>Everyday cotton</figcaption></figure>
+<figure class="carousel-item mb-0"><img class="d-block w-100 lookbook-image" src="images/gallery-knitwear.png" alt="Oatmeal, olive and charcoal knitwear folded on a shelf" width="1254" height="1254" loading="lazy"><figcaption class="bg-dark text-white p-3 p-md-4"><span class="small text-white-50 me-3">09 / 09</span>Layers in neutral tones</figcaption></figure>
+  </div>
+  <div class="d-flex justify-content-between gap-3 mt-3">
+    <button class="btn gap-1 btn-outline-primary px-4" type="button" data-bs-target="#lookbook-carousel" data-bs-slide="prev"><span aria-hidden="true">←</span> Previous</button>
+    <button class="btn gap-1 btn-primary px-4" type="button" data-bs-target="#lookbook-carousel" data-bs-slide="next">Next <span aria-hidden="true">→</span></button>
+  </div>
+</div></div></div>
+  </section>
+</div></main>
+<footer class="bg-dark text-white mt-auto py-4 py-lg-5">
+  <div class="container px-3 px-sm-2 px-lg-4">
+    <div class="row g-4 align-items-center">
+      <div class="col-12 col-lg-5"><a class="wordmark text-white text-decoration-none" href="index.html">FORYOU.</a><p class="small text-white-50 mb-0 mt-2">Everyday clothes. Your own way.</p></div>
+      <div class="col-12 col-lg-7 text-lg-end"><p class="mb-2">Asankhan Shyngys &amp; Shangerey Akerke</p><p class="small text-white-50 mb-2">Team FORYOU · SE-2504 · Student clothing-store concept</p><a class="link-light small" href="media-queries.html">Responsive layout study</a></div>
+    </div>
+  </div>
+</footer>
+<script src="vendor/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,23 @@
+{
+  "scope": "Source-level checks only; not browser execution",
+  "passed": [
+    "about.html: references, anchors, labels, image alternatives and both footer names verified; no inline events.",
+    "collection.html: references, anchors, labels, image alternatives and both footer names verified; no inline events.",
+    "contact.html: references, anchors, labels, image alternatives and both footer names verified; no inline events.",
+    "index.html: references, anchors, labels, image alternatives and both footer names verified; no inline events.",
+    "media-queries.html: references, anchors, labels, image alternatives and both footer names verified; no inline events.",
+    "Pure-CSS study: exactly three cards, no Bootstrap import, explicit 1/2/3 columns and three typography ranges.",
+    "Main theme has no custom margin/padding declarations; Bootstrap utilities control spacing.",
+    "Lookbook: nine images and slide indicators, one active slide, matching Bootstrap targets, Previous/Next controls.",
+    "Four main pages: local Bootstrap CSS and bundle, containers, standard Collapse navbar and styled buttons.",
+    "Bootstrap 5.3.8 CSS matches the SHA-384 integrity hash in official documentation.",
+    "Bootstrap 5.3.8 JavaScript bundle matches the official SHA-384 hash.",
+    "Core normal-text colour pairs exceed 4.5:1 contrast: {'body': 13.16, 'secondary': 5.62, 'primary button': 8.29, 'outline button': 7.71}"
+  ],
+  "pending": [
+    "Real browser responsive and keyboard tests",
+    "Genuine webpage screenshots",
+    "Commit/push and verified deployment URL",
+    "Both members LMS submission and defense"
+  ]
+}
