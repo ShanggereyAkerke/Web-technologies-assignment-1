@@ -2,103 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FORYOU student clothing-store concept. Everyday essentials, a lookbook and a helpful size guide.">
   <title>Collection | FORYOU</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/site.css">
 </head>
-<body class="page-layout">
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header id="main-header">
-    <a class="logo" href="index.html">FORYOU</a>
-    <nav aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="collection.html" aria-current="page">Collection</a>
-      <a href="about.html">About us</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <aside class="sidebar" aria-label="On this page">
-    <h2>On this page</h2>
-    <ul>
-      <li><a href="#clothing">Clothing</a></li>
-      <li><a href="#size-guide">Size guide</a></li>
-    </ul>
-    <p>Everyday clothes,<br>made for you.</p>
-  </aside>
-  <main id="main">
-    <p class="eyebrow">Simple pieces. Everyday possibilities.</p>
-    <h1>Our collection</h1>
-    <p>Four everyday pieces. All prices are in KZT and are for this student demo. Enquiry forms are demonstrations only.</p>
-    <section id="clothing">
-      <h2>Clothing</h2>
-      <div class="products">
-      <article class="card">
-        <img src="images/shirt.png" alt="Everyday shirt in chalk" width="500" height="500">
-        <h3>Everyday shirt</h3>
-        <p>Soft cotton · Chalk</p>
-        <p class="price">18,900 KZT</p>
-        <form class="card-action" action="contact.html" method="get">
-          <button class="button" type="submit">Ask about this item</button>
-        </form>
-      </article>
-      <article class="card">
-        <img src="images/knit.png" alt="Easy knit in moss" width="500" height="500">
-        <h3>Easy knit</h3>
-        <p>Textured knit · Moss</p>
-        <p class="price">24,900 KZT</p>
-        <form class="card-action" action="contact.html" method="get">
-          <button class="button" type="submit">Ask about this item</button>
-        </form>
-      </article>
-      <article class="card">
-        <img src="images/trousers.png" alt="Straight trousers in charcoal" width="500" height="500">
-        <h3>Straight trousers</h3>
-        <p>Relaxed fit · Charcoal</p>
-        <p class="price">22,900 KZT</p>
-        <form class="card-action" action="contact.html" method="get">
-          <button class="button" type="submit">Ask about this item</button>
-        </form>
-      </article>
-      <article class="card">
-        <img src="images/jacket.png" alt="Weekend jacket in sand" width="500" height="500">
-        <h3>Weekend jacket</h3>
-        <p>Lightweight layer · Sand</p>
-        <p class="price">32,900 KZT</p>
-        <form class="card-action" action="contact.html" method="get">
-          <button class="button" type="submit">Ask about this item</button>
-        </form>
-      </article>
+<body class="d-flex flex-column min-vh-100">
+<!-- Assignment 3. Page owner: Asankhan Shyngys. Bootstrap CSS and official JavaScript bundle. -->
+<a class="visually-hidden-focusable position-absolute bg-white text-dark p-3 skip-link" href="#main">Skip to content</a>
+<header class="border-bottom">
+  <!-- Task 5: Bootstrap navbar with the standard Collapse plugin. -->
+  <nav class="navbar navbar-expand-lg bg-light py-3" aria-label="Main navigation">
+    <div class="container px-3 px-sm-2 px-lg-4">
+      <a class="navbar-brand wordmark m-0" href="index.html">FORYOU<span class="brand-dot">.</span></a>
+      <button class="navbar-toggler border-dark px-3 py-2" type="button"
+              data-bs-toggle="collapse" data-bs-target="#main-navigation"
+              aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span><span class="ms-2 small">Menu</span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link px-3 py-2" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link px-3 py-2 active fw-semibold" href="collection.html" aria-current="page">Collection</a></li>
+            <li class="nav-item"><a class="nav-link px-3 py-2" href="about.html">About us</a></li>
+            <li class="nav-item"><a class="nav-link px-3 py-2" href="contact.html">Contact</a></li></ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main id="main" class="flex-grow-1">
+  <div class="container px-3 px-sm-2 px-lg-4 py-4 py-lg-5">
+    <header class="row g-4 align-items-end mb-4">
+      <div class="col-12 col-lg-6"><p class="eyebrow mb-3">The wardrobe / Four essentials</p><h1 class="mb-0">Everyday,<br><em>considered.</em></h1></div>
+      <div class="col-12 col-lg-6"><p class="text-secondary mb-3">One coordinated wardroble for every peace of your clothes.</p>
+        <!-- Task 6: linked Bootstrap button group; no fake filters or scripting. -->
+        <div class="btn-group" role="group" aria-label="Collection sections"><a class="btn gap-1 btn-primary" href="#clothing">The pieces</a><a class="btn gap-1 btn-outline-primary" href="#size-guide">Size guide</a></div>
+      </div>
+    </header>
+    <section id="clothing" class="py-4" aria-labelledby="clothing-title">
+      <h2 id="clothing-title" class="visually-hidden">Our clothing collection</h2>
+      <div class="row g-4 g-lg-5"><div class="col-12 col-sm-6 col-lg-3"><article class="card h-100 product-card border-0 rounded-0">
+  <img class="card-img-top rounded-0 product-image" src="images/shirt.png" alt="Everyday shirt in chalk" width="1254" height="1254" loading="lazy">
+  <div class="card-body d-flex flex-column px-0 pt-3 pb-0">
+    <p class="eyebrow text-secondary mb-2">Chalk</p>
+    <h3 class="card-title h4">Everyday shirt</h3>
+    <p class="card-text text-secondary">An easy cotton layer for a relaxed everyday wardrobe.</p>
+    <p class="fw-semibold mb-3">18,900 KZT</p>
+    <a class="btn gap-1 btn-outline-primary btn-sm align-self-start mt-auto" href="collection.html#size-guide">Find your size <span aria-hidden="true">↗</span></a>
+  </div>
+</article></div>
+<div class="col-12 col-sm-6 col-lg-3"><article class="card h-100 product-card border-0 rounded-0">
+  <img class="card-img-top rounded-0 product-image" src="images/knit.png" alt="Easy knit in moss" width="1254" height="1254" loading="lazy">
+  <div class="card-body d-flex flex-column px-0 pt-3 pb-0">
+    <p class="eyebrow text-secondary mb-2">Moss</p>
+    <h3 class="card-title h4">Easy knit</h3>
+    <p class="card-text text-secondary">Soft texture and a muted green that pairs with your favourites.</p>
+    <p class="fw-semibold mb-3">24,900 KZT</p>
+    <a class="btn gap-1 btn-outline-primary btn-sm align-self-start mt-auto" href="collection.html#size-guide">Find your size <span aria-hidden="true">↗</span></a>
+  </div>
+</article></div>
+<div class="col-12 col-sm-6 col-lg-3"><article class="card h-100 product-card border-0 rounded-0">
+  <img class="card-img-top rounded-0 product-image" src="images/jacket.png" alt="Weekend jacket in sand" width="1254" height="1254" loading="lazy">
+  <div class="card-body d-flex flex-column px-0 pt-3 pb-0">
+    <p class="eyebrow text-secondary mb-2">Sand</p>
+    <h3 class="card-title h4">Weekend jacket</h3>
+    <p class="card-text text-secondary">A lightweight finishing layer for slow weekends and busy days.</p>
+    <p class="fw-semibold mb-3">32,900 KZT</p>
+    <a class="btn gap-1 btn-outline-primary btn-sm align-self-start mt-auto" href="collection.html#size-guide">Find your size <span aria-hidden="true">↗</span></a>
+  </div>
+</article></div>
+<div class="col-12 col-sm-6 col-lg-3"><article class="card h-100 product-card border-0 rounded-0">
+  <img class="card-img-top rounded-0 product-image" src="images/trousers.png" alt="Straight trousers in charcoal" width="1254" height="1254" loading="lazy">
+  <div class="card-body d-flex flex-column px-0 pt-3 pb-0">
+    <p class="eyebrow text-secondary mb-2">Charcoal</p>
+    <h3 class="card-title h4">Straight trousers</h3>
+    <p class="card-text text-secondary">A relaxed straight-leg shape with a simple, versatile finish.</p>
+    <p class="fw-semibold mb-3">22,900 KZT</p>
+    <a class="btn gap-1 btn-outline-primary btn-sm align-self-start mt-auto" href="collection.html#size-guide">Find your size <span aria-hidden="true">↗</span></a>
+  </div>
+</article></div></div>
+    </section>
+    <section id="size-guide" class="bg-soft p-3 p-md-4 p-lg-5 mt-3 mt-lg-4 mb-3" aria-labelledby="size-title">
+      <div class="row g-4 g-lg-5">
+        <div class="col-12 col-lg-6"><p class="eyebrow mb-2">Find your fit</p><h2 id="size-title" class="mb-3">A little guidance.</h2><p>These example body measurements are in centimetres.</p><ol class="ps-4 mb-4"><li class="mb-2">Measure around the fullest part of your chest.</li><li class="mb-2">Measure your waist and the fullest part of your hips.</li><li>Compare the measurements with the table.</li></ol><a class="btn gap-1 btn-secondary btn-sm" href="contact.html#questions">Read sizing questions</a></div>
+        <div class="col-12 col-lg-6"><div class="table-responsive" tabindex="0" role="region" aria-label="Scrollable clothing size guide">
+          <table class="table table-striped align-middle mb-0"><caption class="caption-top pt-0">Unisex body measurements (cm)</caption><thead><tr><th scope="col">Size</th><th scope="col">Chest</th><th scope="col">Waist</th><th scope="col">Hip</th></tr></thead><tbody>
+          <tr><th scope="row">S</th><td>86–94</td><td>70–78</td><td>88–96</td></tr>
+          <tr><th scope="row">M</th><td>94–102</td><td>78–86</td><td>96–104</td></tr>
+          <tr><th scope="row">L</th><td>102–110</td><td>86–94</td><td>104–112</td></tr>
+          <tr><th scope="row">XL</th><td>110–118</td><td>94–102</td><td>112–120</td></tr>
+          </tbody></table></div></div>
       </div>
     </section>
-    <section class="panel" id="size-guide">
-      <h2>Size guide</h2>
-      <p>These example body measurements are in centimetres.</p>
-      <ol>
-        <li>Measure around the fullest part of your chest.</li>
-        <li>Measure around your waist and the fullest part of your hips.</li>
-        <li>Compare your measurements with the table below.</li>
-      </ol>
-      <div class="table-wrap">
-        <table>
-          <caption>Unisex clothing sizes (cm)</caption>
-          <thead>
-            <tr><th scope="col">Size</th><th scope="col">Chest</th><th scope="col">Waist</th><th scope="col">Hip</th></tr>
-          </thead>
-          <tbody>
-            <tr><th scope="row">S</th><td>86–94</td><td>70–78</td><td>88–96</td></tr>
-            <tr><th scope="row">M</th><td>94–102</td><td>78–86</td><td>96–104</td></tr>
-            <tr><th scope="row">L</th><td>102–110</td><td>86–94</td><td>104–112</td></tr>
-            <tr><th scope="row">XL</th><td>110–118</td><td>94–102</td><td>112–120</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p>FORYOU · Student clothing-store project · SE-2504</p>
-    <p>Asankhan Shyngys &amp; Shangerey Akerke</p>
-  </footer>
-
+  </div></main>
+<footer class="bg-dark text-white mt-auto py-4 py-lg-5">
+  <div class="container px-3 px-sm-2 px-lg-4">
+    <div class="row g-4 align-items-center">
+      <div class="col-12 col-lg-5"><a class="wordmark text-white text-decoration-none" href="index.html">FORYOU.</a><p class="small text-white-50 mb-0 mt-2">Everyday clothes. Your own way.</p></div>
+      <div class="col-12 col-lg-7 text-lg-end"><p class="mb-2">Asankhan Shyngys &amp; Shangerey Akerke</p><p class="small text-white-50 mb-2">Team FORYOU · SE-2504 · Student clothing-store concept</p><a class="link-light small" href="media-queries.html">Responsive layout study</a></div>
+    </div>
+  </div>
+</footer>
+<script src="vendor/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+

@@ -1,0 +1,49 @@
+/* Tasks 1 and 2. This file deliberately has no Bootstrap dependency. */
+* { box-sizing: border-box; }
+body { margin: 0; background: #fbf6ee; color: #34282a; font: 16px/1.65 Arial, sans-serif; }
+h1, h2 { font-family: Georgia, serif; font-weight: 400; line-height: 1.15; }
+h1 { font-size: 2.25rem; margin: 16px 0; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.2rem; }
+p { font-size: 1rem; }
+a { color: #743e4b; text-underline-offset: 4px; }
+.study-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; padding: 20px 5%; border-bottom: 1px solid #d8c3c1; }
+.logo { font-size: 2rem; font-weight: bold; text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: 16px; }
+nav a, .card-copy a { display: inline-block; min-height: 44px; padding: 8px 0; }
+main { width: 90%; max-width: 1200px; margin: 40px auto; }
+.eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: .75rem; font-weight: bold; }
+.intro { max-width: 65ch; }
+.layout-status { background: #f0e6dd; padding: 12px 16px; }
+.tablet-status, .desktop-status { display: none; }
+.study-cards { display: grid; grid-template-columns: 1fr; gap: 24px; }
+.study-card { min-width: 0; display: flex; flex-direction: column; background: #fffcf7; border: 1px solid #d8c3c1; }
+.study-card img { display: block; width: 100%; aspect-ratio: 1; height: auto; object-fit: contain; }
+.card-copy { display: flex; flex-direction: column; flex-grow: 1; padding: 24px; }
+.card-copy h3 { margin-top: 0; }
+.card-copy a { margin-top: auto; }
+.explanation { margin-top: 48px; border-top: 1px solid #d8c3c1; padding-top: 24px; }
+footer { padding: 24px 5%; background: #34282a; color: #fbf6ee; }
+footer p { font-size: .875rem; }
+:focus-visible { outline: 3px solid #743e4b; outline-offset: 4px; }
+.skip-link { position: absolute; left: 8px; top: -100px; z-index: 10; padding: 12px; background: white; }
+.skip-link:focus { top: 8px; }
+/* Tablet: medium heading and paragraph sizes, two cards per row. */
+@media (min-width: 768px) {
+  h1 { font-size: 3rem; }
+  h2 { font-size: 2rem; }
+  p { font-size: 1.125rem; }
+  .study-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .mobile-status { display: none; }
+  .tablet-status { display: inline; }
+}
+/* Desktop: larger heading and paragraph sizes, three cards per row. */
+@media (min-width: 992px) {
+  h1 { font-size: 4rem; }
+  h2 { font-size: 2.5rem; }
+  p { font-size: 1.25rem; }
+  .study-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .tablet-status { display: none; }
+  .desktop-status { display: inline; }
+}
+

@@ -1,0 +1,60 @@
+/* Assignment 3: Bootstrap handles layout and all margins/padding.
+   This stylesheet changes only the theme, typography, images and focus styles.
+   The separate media-queries.css page intentionally does not use Bootstrap. */
+:root {
+  --bs-body-bg: #fbf6ee;
+  --bs-body-color: #34282a;
+  --bs-body-font-family: Arial, sans-serif;
+  --bs-primary-rgb: 116, 62, 75;
+  --bs-secondary-rgb: 101, 87, 82;
+  --bs-light-rgb: 251, 246, 238;
+  --bs-dark-rgb: 52, 40, 42;
+  --bs-link-color: #743e4b;
+  --bs-link-hover-color: #542b35;
+}
+body { font-size: 1rem; line-height: 1.65; }
+h1, h2 { font-family: Georgia, serif; font-weight: 400; line-height: 1.08; letter-spacing: -0.045em; }
+h1 { font-size: 2.75rem; }
+h2 { font-size: 2rem; }
+h3 { line-height: 1.25; }
+h1 em { color: #743e4b; }
+.wordmark { font-size: 2rem; font-weight: 800; letter-spacing: -0.07em; color: #34282a; }
+.brand-dot { color: #743e4b; }
+.eyebrow { font-size: .72rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+.bg-soft { background-color: #f0e6dd; }
+.btn-primary { --bs-btn-bg: #743e4b; --bs-btn-border-color: #743e4b; --bs-btn-hover-bg: #542b35; --bs-btn-hover-border-color: #542b35; --bs-btn-active-bg: #542b35; --bs-btn-active-border-color: #542b35; --bs-btn-disabled-bg: #743e4b; --bs-btn-disabled-border-color: #743e4b; --bs-btn-focus-shadow-rgb: 116,62,75; }
+.btn-outline-primary { --bs-btn-color: #743e4b; --bs-btn-border-color: #743e4b; --bs-btn-hover-bg: #743e4b; --bs-btn-hover-border-color: #743e4b; --bs-btn-active-bg: #743e4b; --bs-btn-active-border-color: #743e4b; --bs-btn-focus-shadow-rgb: 116,62,75; }
+.btn-secondary { --bs-btn-bg: #655752; --bs-btn-border-color: #655752; }
+.btn, .nav-link, summary { min-height: 44px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; border-radius: 0; }
+.navbar { --bs-navbar-active-color: #743e4b; --bs-navbar-hover-color: #743e4b; --bs-navbar-color: #34282a; }
+.nav-link.active { text-decoration: underline; text-underline-offset: 7px; }
+.skip-link { z-index: 100; }
+.hero-image { height: 380px; object-fit: cover; object-position: center; }
+.story-image { height: 380px; object-fit: cover; }
+.contact-image { max-height: 360px; object-fit: cover; }
+.product-image { width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; background: #eee2d4; }
+.product-card { background: transparent; transition: transform .2s ease; }
+.product-card:hover, .product-card:focus-within { transform: translateY(-4px); }
+.form-control:focus, .form-select:focus, .form-check-input:focus { border-color: #743e4b; box-shadow: 0 0 0 .2rem #743e4b40; }
+.form-check-input:checked { background-color: #743e4b; border-color: #743e4b; }
+:focus-visible { outline: 3px solid #743e4b; outline-offset: 4px; }
+.carousel-indicators [data-bs-target] { min-height: 44px; background-clip: content-box; }
+.lookbook-image { height: 300px; object-fit: cover; }
+@media (min-width: 768px) {
+  body { font-size: 1.0625rem; }
+  h1 { font-size: 3.5rem; }
+  h2 { font-size: 2.5rem; }
+  .lookbook-image { height: 460px; }
+}
+@media (min-width: 992px) {
+  body { font-size: 1.125rem; }
+  h1 { font-size: 4.5rem; }
+  h2 { font-size: 3rem; }
+  .hero-image, .story-image { height: 540px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .product-card { transition: none; }
+  .product-card:hover, .product-card:focus-within { transform: none; }
+}
+
