@@ -38,7 +38,3 @@ FORYOU-assignment-2/
 | Responsive layout | Tablet breakpoint at 1100px; stacked phone layout at 650px |
 
 The contact form is a visual demonstration; its send button is disabled. Product-card buttons open the Contact page. No backend is included or required by Assignment 2.
-
-## Publication status
-
-This is a local update based on the last supplied Assignment 1 ZIP. It has not been merged into the shared GitHub repository or deployed. Review the separate handover guide before copying changes into a newer checkout.
